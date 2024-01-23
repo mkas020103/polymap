@@ -17,14 +17,19 @@ def find_path(graph, start, end):
 
         if current_node == end:
             break
+        try:
+            for neighbor, weight in graph[current_node]:
+                #print('neighbor: {}'.format(neighbor))
+                #print('weight: {}'.format(weight))
+                distance = current_distance + weight
 
-        for neighbor, weight in graph[current_node]:
-            distance = current_distance + weight
-
-            if distance < distances[neighbor]:
-                distances[neighbor] = distance
-                previous_node[neighbor] = current_node
-                heapq.heappush(pq, (distance, neighbor))
+                if distance < distances[neighbor]:
+                    distances[neighbor] = distance
+                    previous_node[neighbor] = current_node
+                    heapq.heappush(pq, (distance, neighbor))
+        except ValueError:
+            print(graph[current_node])
+            raise Exception("A error occured!")
 
     # Reconstruct the path from end to start
     path = []
@@ -34,10 +39,3 @@ def find_path(graph, start, end):
         current = previous_node[current]
 
     return path
-
-# Example usage
-start_location = 'Main Gate (MG)'
-end_location = 'East Wing ground (EW4)'
-
-shortest_path = find_path(graph, start_location, end_location)
-print(f"The shortest path from {start_location} to {end_location} is:\n{shortest_path}")
