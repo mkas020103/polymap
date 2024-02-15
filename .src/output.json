@@ -1,0 +1,42 @@
+{
+    "lb": [
+        "LW Room 9 (lwr9)",
+        "LW Room 7 (lwr7)",
+        "LW Room 5 (lwr5)",
+        "LW Room 3 (lwr3)",
+        "hallway library left (hll)",
+        "CR left wing (crlw)",
+        "Student lounge library (sll)",
+        "basement library stairs (bls)",
+        "main library stairs (mls)",
+        "Main Lobby Library (mll)",
+        "Ninoy Aquino Library and Learning Resource Center (NAL1)"
+    ],
+    "gr": [
+        "Ninoy Aquino Library and Learning Resource Center (NAL1)",
+        "Way AAX (AAX)",
+        "Way AAW (AAW)",
+        "Way AAV (AAV)",
+        "Way AAP (AAP)",
+        "West Wing ground (WW3)"
+    ],
+    "m1": [
+        "West Wing ground (WW3)",
+        "West Wing Stairs 1A (WS1A)"
+    ],
+    "m2": [
+        "West Wing Stairs 2A (WS2A)"
+    ],
+    "m3": [
+        "West Wing Stairs 3A (WS3A)"
+    ],
+    "m4": [
+        "West Wing Stairs 4A (WS4A)"
+    ],
+    "m5": [
+        "West Wing Stairs 5A (WS5A)",
+        "Dome West Hallway 5th (DWH5)",
+        "Dome South Hallway 5th (DSH5)",
+        "South Hallway 5A (SH5A)"
+    ]
+}

@@ -4,7 +4,7 @@ def find_matching_statements(user_input, statement_set):
 
 # Example usage:
 user_input = "west"
-my_list = ['south west 506', 'java room', 'west245', 'north west456', 'checkingwesteast']
+my_list = ['south west 506', 'java room', 'west245', 'north west456', 'checkingwestWest']
 
 # Convert the list to a set for faster lookups
 my_set = set(my_list)

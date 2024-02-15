@@ -1,22 +1,13 @@
+import sys
 from path import find_path
-from places import graph
-from nodes.build_nutri import all_nutrition
-from nodes.charlie import all_charlie
-from nodes.chk import all_chk
-from nodes.ground import ground
-from nodes.lib import all_library
-from nodes.main1st import all_1st_UPDATED
-from nodes.main2nd import all_2nd_UPDATED
-from nodes.main3rd import all_3rd_UPDATED
-from nodes.main4th import all_4th_UPDATED
-from nodes.main5th import all_5th_UPDATED
-from nodes.main6th import all_6th_UPDATED
+from places import *
+import pandas as pd
 import json
 
 
 def main():
     # Declare starting and end point
-    start_location = 'LW Room 9 (lwr9)'
+    start_location = 'East Oval Runway (EOR)'
     end_location = 'South Hallway 5A (SH5A)'
 
     # Declare dictionary of list of nodes for each places

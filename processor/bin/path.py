@@ -1,3 +1,4 @@
+from places import graph
 import heapq
 
 def find_path(graph, start, end):
