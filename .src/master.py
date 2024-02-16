@@ -110,6 +110,8 @@ def main():
         elif node_key == 'm6' and main6:
             has_path[node_key] = main6
 
+    print(has_path)
+
     with open('output.json', 'w') as f:
         json.dump(has_path, f, indent=4)
 
